@@ -34,9 +34,7 @@ public class HealthyFitLoginStep {
 
     @Step
     public void iCanSeeTheHealthyFitHomepage(){
-        homepage2.WeightMessage();
-        homepage2.HeightMessage();
-        homepage2.AgeMessage();
+        healthyfitLoginPage.ProfileMessage();
     }
     @Step
     public void iInputInvalidEmailAndValidPassword(){

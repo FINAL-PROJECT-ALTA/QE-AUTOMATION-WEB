@@ -3,7 +3,7 @@ Feature: Login user
 #I want to perform login on healthy fit
 #So that I can see the healthy fit homepage
 
-@login
+@newlogin
 Scenario: Login Healthy Fit
   Given I open Healthy Fit homepage
     When I click login button
@@ -50,5 +50,3 @@ Scenario: Login with blank password
   And I skip to fill password section and then i fill email section
   And I click button login
   Then I can't see Healthy Fit homepage
-
-#loginv3
