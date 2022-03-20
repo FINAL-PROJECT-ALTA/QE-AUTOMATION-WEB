@@ -12,5 +12,4 @@ import java.util.concurrent.TimeUnit;
 @DefaultUrl("https://healthyfit.web.app/profile")
 public class Homepage2 extends PageObject {
 
-
 }
