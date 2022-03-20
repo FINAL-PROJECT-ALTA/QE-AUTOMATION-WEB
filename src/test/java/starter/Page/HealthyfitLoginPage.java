@@ -45,15 +45,15 @@ public class HealthyfitLoginPage extends PageObject {
         login2.click();
     }
     public void inputEmail(){
-        fieldEmail.sendKeys("ririe23@gmail.com");
+        fieldEmail.sendKeys("dinda@gmail.com");
     }
     public void inputPassword(){
-        fieldPassword.sendKeys("tririri");
+        fieldPassword.sendKeys("dinda");
     }
     public void clickLogin(){
         loginButton.click();
     }
-    public void inputInvalidEmail(){fieldEmail.sendKeys("ririe23gmail.com");}
+    public void inputInvalidEmail(){fieldEmail.sendKeys("dinda4gmail.com");}
     public void inputInvalidPassword(){fieldPassword.sendKeys("Tririri");}
     public Boolean verifyLogo(){return logo.isDisplayed();}
     public String gagalLoginMessage(){return oops.getText();}
