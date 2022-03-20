@@ -1,22 +1,25 @@
 package starter.Page;
 
 
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.util.concurrent.TimeUnit;
+
 @DefaultUrl("https://healthyfit.web.app")
 public class HealthyfitLoginPage extends PageObject {
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/main/div/div/div/div[4]/form/div[1]/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/main/div/div/div/div[2]/form/div[1]/div/input")
     WebElement fieldEmail;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/main/div/div/div/div[4]/form/div[2]/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/main/div/div/div/div[2]/form/div[2]/div/input")
     WebElement fieldPassword;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/main/div/div/div/div[4]/form/div[3]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/main/div/div/div/div[2]/form/div[3]/button")
     WebElement loginButton;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/main/div[3]/div[1]/div/div/button[1]")
@@ -30,6 +33,13 @@ public class HealthyfitLoginPage extends PageObject {
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"swal2-html-container\"]")
     WebElement somethingwrong;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/main/div[2]/h1")
+    WebElementFacade profile;
+
+    public String ProfileMessage(){
+        profile.withTimeoutOf(30, TimeUnit.SECONDS).waitUntilVisible();
+        return profile.getText();}
 
     public void clickLoginButton(){
         login2.click();
