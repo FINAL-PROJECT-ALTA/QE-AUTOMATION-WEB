@@ -41,6 +41,7 @@
 - Automation testing
 - Manual Testing
 - Test Scenario
+- Summary Report
 
 <!-- CONTACT -->
 ## Contact
