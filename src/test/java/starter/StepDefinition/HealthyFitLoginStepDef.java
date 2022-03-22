@@ -33,10 +33,10 @@ public class HealthyFitLoginStepDef {
         healthyFitLoginStep.iClickButtonLogin();
     }
 
-    @Then("I can see the Healthy Fit homepage")
-    public void iCanSeeTheHealthyFitHomepage() {
-        healthyFitLoginStep.iCanSeeTheHealthyFitHomepage();
-        }
+    @Then("I can see the Healthy Fit profilepage")
+    public void iCanSeeTheHealthyFitProfilepage() {
+        healthyFitLoginStep.iCanSeeTheHealthyFitProfilepage();
+    }
 
     @And("I input invalid email and valid password")
     public void iInputInvalidEmailAndValidPassword() {
@@ -63,9 +63,9 @@ public class HealthyFitLoginStepDef {
         healthyFitLoginStep.iSkipToFillPasswordSectionAndThenIFillEmailSection();
     }
 
-    @Then("I can't see Healthy Fit homepage")
-    public void iCanTSeeHealthyFitHomepage() {
-        healthyFitLoginStep.iCanTSeeHealthyFitHomepage();
+    @Then("I can't see Healthy Fit profilepage")
+    public void iCanTSeeHealthyFitProfilepage() {
+        healthyFitLoginStep.iCanTSeeHealthyFitProfilepage();
     }
 
 }

@@ -9,7 +9,7 @@ Scenario: Login Healthy Fit
     When I click login button
     And I input email and password
     And I click button login
-    Then I can see the Healthy Fit homepage
+    Then I can see the Healthy Fit profilepage
 
 @invalidemail
 Scenario: Login with invalid email and valid password
@@ -17,7 +17,7 @@ Scenario: Login with invalid email and valid password
     When I click login button
     And I input invalid email and valid password
     And I click button login
-    Then I can't see Healthy Fit homepage
+    Then I can't see Healthy Fit profilepage
 
 @invalidpassword
 Scenario: Login with email and invalid password
@@ -25,7 +25,7 @@ Scenario: Login with email and invalid password
   When I click login button
   And I input email and invalid password
   And I click button login
-  Then I can't see Healthy Fit homepage
+  Then I can't see Healthy Fit profilepage
 
 @invalidemailpassword
 Scenario: Login with invalid email and invalid password
@@ -33,7 +33,7 @@ Scenario: Login with invalid email and invalid password
   When I click login button
   And I input invalid email and invalid password
   And I click button login
-  Then I can't see Healthy Fit homepage
+  Then I can't see Healthy Fit profilepage
 
 @blankemail
 Scenario: Login with blank email
@@ -41,7 +41,7 @@ Scenario: Login with blank email
   When I click login button
   And I skip to fill email section and then i fill password section
   And I click button login
-  Then I can't see Healthy Fit homepage
+  Then I can't see Healthy Fit profilepage
 
 @blankpassword
 Scenario: Login with blank password
@@ -49,4 +49,4 @@ Scenario: Login with blank password
   When I click login button
   And I skip to fill password section and then i fill email section
   And I click button login
-  Then I can't see Healthy Fit homepage
+  Then I can't see Healthy Fit profilepage
