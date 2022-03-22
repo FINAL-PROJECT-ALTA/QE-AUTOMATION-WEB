@@ -3,13 +3,11 @@ package starter.Step;
 import net.thucydides.core.annotations.Step;
 import starter.Page.HealthyfitLoginPage;
 import starter.Page.Homepage;
-import starter.Page.Homepage2;
 
 public class HealthyFitLoginStep {
 
     HealthyfitLoginPage healthyfitLoginPage;
     Homepage homepage;
-    Homepage2 homepage2;
 
     @Step
     public void iOpenHealthyFitHomepage(){
@@ -33,7 +31,7 @@ public class HealthyFitLoginStep {
     }
 
     @Step
-    public void iCanSeeTheHealthyFitHomepage(){
+    public void iCanSeeTheHealthyFitProfilepage(){
         healthyfitLoginPage.ProfileMessage();
     }
     @Step
@@ -60,10 +58,9 @@ public class HealthyFitLoginStep {
         healthyfitLoginPage.inputEmail();
     }
     @Step
-    public void iCanTSeeHealthyFitHomepage() {
+    public void iCanTSeeHealthyFitProfilepage(){
         healthyfitLoginPage.verifyLogo();
         healthyfitLoginPage.gagalLoginMessage();
         healthyfitLoginPage.wrongMessage();
-
     }
 }
