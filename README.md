@@ -41,7 +41,7 @@
 - Automation testing - [Link](https://drive.google.com/drive/folders/1oekauqo_GRXzQI1F8cONNv4xZh_DILDF?usp=sharing)
 - Manual Testing - [Link](https://drive.google.com/drive/folders/1oekauqo_GRXzQI1F8cONNv4xZh_DILDF?usp=sharing)
 - Test Scenario - [Link](https://docs.google.com/spreadsheets/d/1PYHjBhKnSZUSrqdfvFeQFEph6HmlR7kBs_Rz_9EcfHI/edit#gid=0)
-- Summary Report - [Link]()
+- Summary Report - [Link](https://drive.google.com/drive/folders/1oekauqo_GRXzQI1F8cONNv4xZh_DILDF?usp=sharing)
 
 <!-- CONTACT -->
 ## Contact
