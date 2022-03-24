@@ -45,10 +45,10 @@ public class HealthyfitLoginPage extends PageObject {
         login2.click();
     }
     public void inputEmail(){
-        fieldEmail.sendKeys("dinda@gmail.com");
+        fieldEmail.sendKeys("kopikirsendiri@gmail.com");
     }
     public void inputPassword(){
-        fieldPassword.sendKeys("dinda");
+        fieldPassword.sendKeys("kopi");
     }
     public void clickLogin(){
         loginButton.click();

@@ -11,13 +11,11 @@ public class HFGoalsStep {
 
     @Step
     public void iClickAddYourGoals() {
-        profilePage.open();
         profilePage.clickAddYourGoals();
     }
     @Step
     public void iInputHeight() {
         goalsPage.inputHeight();
-
     }
     @Step
     public void iInputWeight() {

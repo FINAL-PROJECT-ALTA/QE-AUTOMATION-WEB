@@ -9,7 +9,7 @@ import org.openqa.selenium.support.How;
 @DefaultUrl("https://healthyfit.web.app/profile")
 public class ProfilePage extends PageObject {
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"btn-change-goals\"]")
+    @FindBy(how = How.ID, using = "btn-add-goals")
     WebElement addyourgoals;
 
     public void clickAddYourGoals(){
